@@ -1,0 +1,8 @@
+{
+  "name": "image-file-resize",
+  "version": "1.0.0",
+  "description": "To resize image file by with and height. Also change the extension of image file.",
+  "main": "index.js",
+  "author": "Arun kataria",
+  "license": "ISC"
+}
