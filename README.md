@@ -7,18 +7,23 @@ This node module to resize the image file according to width and height. Also yo
 ## Install
 
 ```sh
-npm install --save image-file-resize
+npm install image-file-resize --save
 ```
 ## Examples of how to use it
 
 ```javascript
     import convert from 'image-file-resize';
 
-    convert({ file: e.target.files[0],  width: 600, height: 400, type: 'jpeg'  }).then(resp => {
-                // Response contain compress file
-            }).catch(error => {
-               // Error
-            })
+    convert({ 
+        file: e.target.files[0],  
+        width: 600, 
+        height: 400, 
+        type: 'jpeg'
+        }).then(resp => {
+            // Response contain compressed and resized file
+        }).catch(error => {
+             // Error
+        })
 ```
 
 ## Parameter to send
@@ -26,9 +31,10 @@ npm install --save image-file-resize
 
 | Key | Required/Optional | Description |
 | --- | --- | --- |
-| `file` | **Required** | Contain file object. |
+| `file` | **Required** | Contain browser file object. |
 | `width` | Optional | Width of image required **Default is 500** |
 | `height` | Optional | Height of image required **Default is 300** |
 | `type` | Optional | Type of image required **Default is jpeg** |
+
 
 You can convert image only in **jpg, gif, bmp, png, jpeg**.
