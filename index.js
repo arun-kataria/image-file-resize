@@ -1,7 +1,8 @@
-function imageConvert({ file, width, height, imageType }) {
+function imageConvert({ file, width, height, type }) {
     return new Promise(function (resolve, reject) {
         let allow = ['jpg', 'gif', 'bmp', 'png', 'jpeg'];
         if (file.name && allow.includes(file.name.split(".")[1]) && file.size && file.type && allow.includes(file.type.split("/")[1])) {
+            let imageType = type? type:'jpeg';
             const imgWidth = width ? width : 500;
             const imgHeight = height ? height : 300;
             const fileName = file.name;
@@ -18,7 +19,7 @@ function imageConvert({ file, width, height, imageType }) {
                     ctx.drawImage(img, 0, 0, imgWidth, imgHeight);
                     ctx.canvas.toBlob((blob) => {
                         const file = new File([blob], fileName, {
-                            type: 'image/jpeg',
+                            type: `image/${imageType}`,
                             lastModified: Date.now()
                         });
                         resolve(file)
