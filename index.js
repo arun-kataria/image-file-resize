@@ -1,4 +1,4 @@
-function imageConvert({ file, width, height, type }) {
+module.exports = function({ file, width, height, type }) {
     return new Promise(function (resolve, reject) {
         let allow = ['jpg', 'gif', 'bmp', 'png', 'jpeg'];
         try {
@@ -34,4 +34,3 @@ function imageConvert({ file, width, height, type }) {
         }
     })
 }
-export default imageConvert;

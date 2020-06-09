@@ -1,7 +1,7 @@
 {
   "name": "image-file-resize",
-  "version": "1.0.2",
-  "description": "To resize or compress image file by with and height. Image compression with extension: jpg/jpeg, svg, png, gif.",
+  "version": "1.0.3",
+  "description": "To resize or compress image file by weight and height. Image compression with extension: jpg/jpeg, svg, png, gif.",
   "main": "index.js",
   "author": {
     "name": "Arun kataria",
@@ -86,6 +86,8 @@
     "gifsicle",
     "giflossy",
     "gif2webp",
-    "image min"
+    "image min",
+    "react.js",
+    "angular"
   ]
 }
