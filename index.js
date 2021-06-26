@@ -2,7 +2,7 @@ module.exports = function({ file, width, height, type }) {
     return new Promise(function (resolve, reject) {
         let allow = ['jpg', 'gif', 'bmp', 'png', 'jpeg'];
         try {
-            if (file.name && file.name.split(".")[1] && allow.includes(file.name.split(".")[1].toLowerCase()) && file.size && file.type) {
+            if (file.name && file.name.split(".").reverse()[0] && allow.includes(file.name.split(".").reverse()[0].toLowerCase()) && file.size && file.type) {
                 let imageType = type ? type : 'jpeg';
                 const imgWidth = width ? width : 500;
                 const imgHeight = height ? height : 300;
