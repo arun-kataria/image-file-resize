@@ -1,6 +1,6 @@
 module.exports = function({ file, width, height, type }) {
     return new Promise(function (resolve, reject) {
-        let allow = ['jpg', 'gif', 'bmp', 'png', 'jpeg'];
+        let allow = ['jpg', 'gif', 'bmp', 'png', 'jpeg', 'svg'];
         try {
             if (file.name && file.name.split(".").reverse()[0] && allow.includes(file.name.split(".").reverse()[0].toLowerCase()) && file.size && file.type) {
                 let imageType = type ? type : 'jpeg';

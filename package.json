@@ -1,6 +1,6 @@
 {
   "name": "image-file-resize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "To resize or compress image file by weight and height. Image compression with extension: jpg/jpeg, svg, png, gif.",
   "main": "index.js",
   "author": {
