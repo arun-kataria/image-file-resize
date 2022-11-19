@@ -24,7 +24,7 @@ module.exports = function({ file, width, height, type }) {
                                 lastModified: Date.now()
                             });
                             resolve(file)
-                        }, 'image/jpeg', 1);
+                        }, ´image/${imageType}´, 1);
                     }, reader.onerror = error => reject(error);
                 };
             } else reject('File not supported!')
